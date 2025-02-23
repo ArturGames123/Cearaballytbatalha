@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha contra Ceará_ball_yt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #008cff;
+    color: white;
+    padding: 20px;
+}
+
+.battle-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.player, .enemy {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c70039;
+}
+
+#battle-log {
+    margin-top: 20px;
+    font-size: 18px;
+}</style>
+    <h1>Batalha contra Ceará_ball_yt</h1>
+
+    <div class="battle-container">
+        <div class="player">
+            <h2>Jogador</h2>
+            <p>Vida: <span id="player-health">100</span></p>
+        </div>
+
+        <div class="enemy">
+            <h2>Ceará_ball_yt</h2>
+            <p>Vida: <span id="enemy-health">100</span></p>
+        </div>
+    </div>
+
+    <button id="attack-btn">⚔️ Atacar</button>
+    <button id="heal-btn">💖 Curar</button>
+    <p id="battle-log"></p>
+
+    <script src="batalhadesla.js"></script>
+</body>
+</html>
